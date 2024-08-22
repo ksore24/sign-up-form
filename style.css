@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'Nordic';
+    src: url(/fonts/Norse-Bold.otf);
+}
+
+html, body{
+    display: flex;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.left-side{
+    max-width: 40%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-background{
+    height: 100%;
+}
+
+.left-background>img{
+    height: 100%;
+}
+
+.left-header{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    color: #ffffff;
+    font-size: 10vw;
+    font-size: 10vh;
+    font-family: Nordic;
+    align-items: center;
+}
+
+.left-header>img{
+    width: 25%;
+}
+
+.left-footer{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 1%;
+    color: white;
+    font-size: 2vh;
+}
+
+img{
+    max-width: 100%;
+}
+
+.right-side{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+.right-heading{
+    height: 33%;
+    background-color: rgb(240, 239, 239);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 30%;
+}
+
+.right-main{
+    height: 33%;
+}
+
+.row1, .row2, .row3{
+    display: flex;
+    padding: 8px;
+    font-size: 10px;
+}
+
+.right-footer{
+    height: 33%;
+    background-color: rgb(240, 239, 239);
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 30%;
+    padding-top: 5%;
+}
+
+button{
+    background-color: rgb(5, 77, 5);
+    border-radius: 5px;
+    color: white;
+    border: none;
+    height: 30px;
+    width: 170px;
+    font-weight: bold;
+}
