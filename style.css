@@ -32,10 +32,10 @@ html, body{
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
     top: 15%;
-    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
     color: #ffffff;
-    font-size: 10vw;
-    font-size: 10vh;
+    font-size: 7vw;
     font-family: Nordic;
     align-items: center;
 }
@@ -51,6 +51,7 @@ html, body{
     bottom: 1%;
     color: white;
     font-size: 2vh;
+    overflow-x: hidden;
 }
 
 img{
@@ -77,13 +78,11 @@ img{
 
 .right-main{
     height: 33%;
+    display: flex;
+    align-items: center;
+    margin: 30px;
 }
 
-.row1, .row2, .row3{
-    display: flex;
-    padding: 8px;
-    font-size: 10px;
-}
 
 .right-footer{
     height: 33%;
@@ -92,7 +91,7 @@ img{
     flex-direction: column;
     padding-left: 10%;
     padding-right: 30%;
-    padding-top: 5%;
+    padding-top: 2%;
 }
 
 button{
@@ -100,7 +99,19 @@ button{
     border-radius: 5px;
     color: white;
     border: none;
-    height: 30px;
-    width: 170px;
+    height: 35px;
+    width: 150px;
     font-weight: bold;
+}
+
+form{
+    display: grid;
+    grid-template-columns: 25vh 25vh;
+    column-gap: 10vh;
+    row-gap: 2vh;
+    font-size: 1.5vh;
+}
+
+input:invalid{
+    border-color: red;
 }
